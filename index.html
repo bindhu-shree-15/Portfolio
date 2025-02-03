@@ -2,173 +2,146 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bindhu Shree G V - Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
     <style>
         body {
-            font-family: 'Poppins', sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #2a4d3f; /* Dark green background */
+            background: linear-gradient(to right, #1e3c72, #2a5298);
+            color: #fff;
+        }
+
+        header, footer {
+            background-color: #0d1b2a;
             color: #e0e1dd;
             text-align: center;
+            padding: 1.5em 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
         }
-        header {
-            background: linear-gradient(90deg, #4b8e8d, #7d9d9c); /* Green gradient */
-            padding: 20px;
-            box-shadow: 0px 4px 10px rgba(65, 90, 119, 0.5);
-        }
+
         nav {
-            background-color: #2a4d3f; /* Dark green */
-            padding: 15px;
-            box-shadow: 0px 4px 10px rgba(65, 90, 119, 0.5);
+            background: #1b263b;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
         }
+
         nav ul {
-            list-style-type: none;
+            list-style: none;
             padding: 0;
-            display: block; /* Display items vertically */
+            display: flex;
+            justify-content: center;
             margin: 0;
         }
+
         nav ul li {
-            margin: 15px 0; /* Vertical margin for spacing */
+            margin: 0 20px;
         }
+
         nav ul li a {
-            text-decoration: none;
             color: #e0e1dd;
+            text-decoration: none;
             font-weight: bold;
-            font-size: 18px;
-            padding: 10px;
-            transition: color 0.3s, background-color 0.3s;
-            border-radius: 5px;
-            display: block; /* Make the link a block element for better spacing */
+            padding: 10px 15px;
+            transition: background 0.3s, color 0.3s;
         }
+
         nav ul li a:hover {
-            color: #2a4d3f;
-            background-color: #8abf8e; /* Light green hover */
-        }
-        section {
-            padding: 50px;
-        }
-        h2 {
-            border-bottom: 2px solid #8abf8e;
-            display: inline-block;
-            padding-bottom: 5px;
-            transition: all 0.3s ease-in-out;
-        }
-        h2:hover {
-            color: #8abf8e;
-            border-bottom: 2px solid #e0e1dd;
-        }
-        a {
-            color: #8abf8e;
-            transition: color 0.3s;
-        }
-        a:hover {
-            color: #e0e1dd;
-        }
-        .download-cv {
-            margin-top: 20px;
-            padding: 10px 20px;
-            background: #8abf8e;
-            color: #2a4d3f;
-            text-decoration: none;
-            font-weight: bold;
+            background: #415a77;
             border-radius: 5px;
-            transition: background 0.3s;
+            color: #fff;
         }
-        .download-cv:hover {
-            background: #e0e1dd;
-            color: #2a4d3f;
-        }
+
         .container {
-            max-width: 90%;
-            margin: auto;
-        }
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-        }
-        .card {
-            background: #2a4d3f;
+            max-width: 900px;
+            margin: 20px auto;
             padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+        }
+
+        section {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(10px);
             transition: transform 0.3s;
         }
-        .card:hover {
-            transform: scale(1.05);
+
+        section:hover {
+            transform: translateY(-5px);
         }
+
+        h1, h2, h3 {
+            color: #a8dadc;
+        }
+
+        a {
+            color: #00b4d8;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
         footer {
-            background-color: #2a4d3f;
-            padding: 10px;
-            font-size: 14px;
-            position: relative;
             margin-top: 20px;
-        }
-        ul {
-            padding: 0;
-        }
-        ul li {
-            list-style: none;
-            padding: 10px;
-            background: #3b6c5e;
-            margin: 10px auto;
-            width: 80%;
-            border-radius: 10px;
-            transition: transform 0.3s;
-        }
-        ul li:hover {
-            transform: scale(1.05);
-            background: #4b8e8d;
-            color: #121212;
         }
     </style>
 </head>
 <body>
     <header>
         <h1>Bindhu Shree G V</h1>
-        <p>Computer Science Graduate | Machine Learning & Cybersecurity Enthusiast</p>
+        <p>Computer Science Engineer | Machine Learning & Cybersecurity Enthusiast</p>
     </header>
     <nav>
         <ul>
             <li><a href="#about">About</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#projects">Projects</a></li>
             <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certifications">Certifications</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
-    <section id="about" class="container">
-        <h2>About Me</h2>
-        <p>A highly motivated Computer Science graduate with expertise in AI, ML, and Cloud Computing. Passionate about cybersecurity and application development.</p>
-        <a href="Bindhu_Shree_Resume LTI.pdf" class="download-cv" download>Download CV</a>
-    </section>
-    <section id="education" class="container">
-        <h2>Education</h2>
-        <p><strong>B.Eng Computer Science</strong> - Visvesvaraya Technological University, India (2024) - GPA: 7.9/10</p>
-    </section>
-    <section id="projects" class="container grid">
-        <h2>Projects</h2>
-        <ul>
-            <li><a href="https://github.com/bindhu-shree-15/ML-Malware-Detection" target="_blank">ML Based Cross-Platform Malware Detection</a></li>
-            <li><a href="https://github.com/bindhu-shree-15/students-notes-gallery" target="_blank">Students Notes Gallery App</a></li>
-            <li><a href="https://github.com/bindhu-shree-15/flat-booking-management-system" target="_blank">Online Flat Booking System</a></li>
-        </ul>
-    </section>
-    <section id="skills" class="container">
-        <h2>Skills</h2>
-        <p>Python, Java, JavaScript, SQL, HTML, CSS, Machine Learning, Web Development, Cybersecurity</p>
-    </section>
-    <section id="contact" class="container">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:bindhuvenu2003@gmail.com">bindhuvenu2003@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://linkedin.com/in/bindhu-shree-gv" target="_blank">linkedin.com/in/bindhu-shree-gv</a></p>
-        <p>GitHub: <a href="https://github.com/bindhu-shree-15" target="_blank">github.com/bindhu-shree-15</a></p>
-    </section>
+    <div class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>A highly motivated Computer Science graduate from Visvesvaraya Technological University with expertise in AI, ML, Data Structures, and Cloud Computing. Strong problem-solving skills with hands-on project experience in real-world applications.</p>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <p><strong>Languages:</strong> Python, Java, JavaScript, HTML, CSS, SQL</p>
+            <p><strong>Tools/Frameworks:</strong> Scikit-learn, Django, Android Studio, Firebase, MySQL, Apache Tomcat</p>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <ul>
+                <li><a href="https://github.com/bindhu-shree-15/ML-Malware-Detection" target="_blank">ML Based Cross-Platform Malware Detection</a></li>
+                <li><a href="https://github.com/bindhu-shree-15/students-notes-gallery" target="_blank">Students Notes Gallery App</a></li>
+                <li><a href="https://github.com/bindhu-shree-15/flat-booking-management-system" target="_blank">Online Flat Booking System</a></li>
+            </ul>
+        </section>
+
+        <section id="certifications">
+            <h2>Certifications</h2>
+            <ul>
+                <li>Certified in Artificial Intelligence and Data Structures</li>
+                <li>IEEE Published Paper: ML-Based Cross-Platform Malware Detection</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:bindhuvenu2003@gmail.com">bindhuvenu2003@gmail.com</a></p>
+            <p>GitHub: <a href="https://github.com/bindhu-shree-15" target="_blank">github.com/bindhu-shree-15</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/bindhu-shree-gv/" target="_blank">linkedin.com/in/bindhu-shree-gv</a></p>
+        </section>
+    </div>
     <footer>
-        <p>&copy; 2025 Bindhu Shree G V. All rights reserved.</p>
+        <p>&copy; 2024 Bindhu Shree G V. All rights reserved.</p>
     </footer>
 </body>
 </html>
