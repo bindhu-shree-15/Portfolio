@@ -27,13 +27,11 @@
         nav ul {
             list-style-type: none;
             padding: 0;
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
+            display: block; /* Display items vertically */
             margin: 0;
         }
         nav ul li {
-            margin: 0 15px;
+            margin: 15px 0; /* Vertical margin for spacing */
         }
         nav ul li a {
             text-decoration: none;
@@ -43,6 +41,7 @@
             padding: 10px;
             transition: color 0.3s, background-color 0.3s;
             border-radius: 5px;
+            display: block; /* Make the link a block element for better spacing */
         }
         nav ul li a:hover {
             color: #2a4d3f;
