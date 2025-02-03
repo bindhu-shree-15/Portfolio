@@ -10,13 +10,18 @@
             font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #0d1b2a;
+            background-color: #2a4d3f; /* Dark green background */
             color: #e0e1dd;
             text-align: center;
         }
         header {
-            background: linear-gradient(90deg, #1b263b, #415a77);
+            background: linear-gradient(90deg, #4b8e8d, #7d9d9c); /* Green gradient */
             padding: 20px;
+            box-shadow: 0px 4px 10px rgba(65, 90, 119, 0.5);
+        }
+        nav {
+            background-color: #2a4d3f; /* Dark green */
+            padding: 15px;
             box-shadow: 0px 4px 10px rgba(65, 90, 119, 0.5);
         }
         nav ul {
@@ -24,38 +29,40 @@
             padding: 0;
             display: flex;
             justify-content: center;
-            background: #1b263b;
-            padding: 10px;
-            box-shadow: 0px 4px 10px rgba(65, 90, 119, 0.5);
             flex-wrap: wrap;
+            margin: 0;
         }
         nav ul li {
-            margin: 10px;
+            margin: 0 15px;
         }
         nav ul li a {
             text-decoration: none;
             color: #e0e1dd;
             font-weight: bold;
-            transition: color 0.3s;
+            font-size: 18px;
+            padding: 10px;
+            transition: color 0.3s, background-color 0.3s;
+            border-radius: 5px;
         }
         nav ul li a:hover {
-            color: #778da9;
+            color: #2a4d3f;
+            background-color: #8abf8e; /* Light green hover */
         }
         section {
             padding: 50px;
         }
         h2 {
-            border-bottom: 2px solid #778da9;
+            border-bottom: 2px solid #8abf8e;
             display: inline-block;
             padding-bottom: 5px;
             transition: all 0.3s ease-in-out;
         }
         h2:hover {
-            color: #778da9;
+            color: #8abf8e;
             border-bottom: 2px solid #e0e1dd;
         }
         a {
-            color: #778da9;
+            color: #8abf8e;
             transition: color 0.3s;
         }
         a:hover {
@@ -64,8 +71,8 @@
         .download-cv {
             margin-top: 20px;
             padding: 10px 20px;
-            background: #778da9;
-            color: #0d1b2a;
+            background: #8abf8e;
+            color: #2a4d3f;
             text-decoration: none;
             font-weight: bold;
             border-radius: 5px;
@@ -73,7 +80,7 @@
         }
         .download-cv:hover {
             background: #e0e1dd;
-            color: #1b263b;
+            color: #2a4d3f;
         }
         .container {
             max-width: 90%;
@@ -85,7 +92,7 @@
             gap: 20px;
         }
         .card {
-            background: #1b263b;
+            background: #2a4d3f;
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
@@ -95,7 +102,7 @@
             transform: scale(1.05);
         }
         footer {
-            background-color: #1b263b;
+            background-color: #2a4d3f;
             padding: 10px;
             font-size: 14px;
             position: relative;
@@ -107,7 +114,7 @@
         ul li {
             list-style: none;
             padding: 10px;
-            background: #1e1e1e;
+            background: #3b6c5e;
             margin: 10px auto;
             width: 80%;
             border-radius: 10px;
@@ -115,7 +122,7 @@
         }
         ul li:hover {
             transform: scale(1.05);
-            background: #ff8c00;
+            background: #4b8e8d;
             color: #121212;
         }
     </style>
@@ -150,7 +157,6 @@
             <li><a href="https://github.com/bindhu-shree-15/students-notes-gallery" target="_blank">Students Notes Gallery App</a></li>
             <li><a href="https://github.com/bindhu-shree-15/flat-booking-management-system" target="_blank">Online Flat Booking System</a></li>
         </ul>
-
     </section>
     <section id="skills" class="container">
         <h2>Skills</h2>
